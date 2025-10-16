@@ -101,6 +101,9 @@ def api_predict():
     X = np.array(row).reshape(1, -1)
     pred = model.predict(X)[0]
     return {"prediction": float(pred)}
-
+print("print on line 104 main")
+print("print on line 105 main")
+print("print on line 106 main")
+print("print on line 107 main")
 if __name__ == "__main__":
     app.run(debug=True, port=5000)
